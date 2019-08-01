@@ -1,0 +1,17 @@
+tenant: pdivasto
+app: magneto
+service: magneto
+
+frameworkVersion: ">=1.44.0"
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  mutant:
+    handler: function.mutant
+    events:
+      - http:
+          path: mutant
+          method: post

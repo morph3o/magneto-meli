@@ -2,9 +2,10 @@
   "name": "magneto-meli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "function.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel src/magneto.js -o magneto-compiled.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,9 @@
   },
   "homepage": "https://github.com/morph3o/magneto-meli#readme",
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "babel-core": "^6.26.3",
     "eslint": "^6.1.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
@@ -26,5 +28,9 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.503.0",
+    "babel-core": "^6.26.3"
   }
 }
