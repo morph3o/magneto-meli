@@ -1,4 +1,4 @@
-import { containSequence, isMutant, numberOfSequences, isValidChain } from '../index';
+import { containSequence, numberOfSequences, isValidChain, isMutant } from '../src/magneto';
 
 describe('Magneto tests', () => {
   it('should return true for a valid chain', () => {
