@@ -4,7 +4,7 @@
   "description": "",
   "main": "function.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage __tests__/**/*.js",
     "build": "babel src/magneto.js -o magneto-compiled.js"
   },
   "repository": {
