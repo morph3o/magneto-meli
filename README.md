@@ -1,5 +1,12 @@
 # Magneto App
 
+## Arquitectura
+La arquitectura de la aplicación es la siguiente:
+
+<img src="architecture/meli-arch.png" />
+
+Esta consiste en 2 lambdas, `stats` y `mutant`. `stats` es el lambda encargado de consultar los stats de todos los ADNs consultados en el tiempo, los cuales estan almacenado en la tabla `stats` en DynamoDB. `mutant` es el lambda encargado de verificar de que tipo es el ADN consultado y de actualizar la tabla `stats` con cada ADN consultado.
+
 ## Ejecución
 La aplicación atualmente esta desplegada en AWS Lambdas.
 
