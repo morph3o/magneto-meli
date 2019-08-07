@@ -1,4 +1,7 @@
 # Magneto App
+La aplicación fue desarrollada en Javascript ES6 y esta en el archivo [magneto.js](src/magneto.js). En general el algoritmo interpreta la secuencia de ADN como una matriz NxN la cual es recorrida a través de sub-matrices 4x4. Por cada sub-matriz verifica la cantidad de secuencias con 4 caracteres iguales.
+
+Existe un archivo `magneto-compiled.js` el cual esta en ES5 y fue generado utilizando Babel para poder ser utilizado en AWS Lambda.
 
 ## Arquitectura
 La arquitectura de la aplicación es la siguiente:
